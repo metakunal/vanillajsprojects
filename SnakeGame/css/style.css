@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.body{
+    background: url(/img/bg1.jpg);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    background: url(/img/bg2.jpg);
+    background: linear-gradient(rgb(216, 226, 77),rgb(190, 134, 59)); 
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    /* Making the board as grid so to make our snake move */
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+.head{
+    background: linear-gradient(rgb(7, 226, 80),rgb(29, 79, 216));
+    border: 2px solid purple;
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+.snake{
+    background-color: rgb(48, 196, 43);
+    border: .25vmin solid white;;
+    border-radius: 25px;
+
+}
+.food{
+    background: linear-gradient(red,rgb(11, 128, 0));
+    border: .25vmin solid black;;
+    border-radius: 50px;
+
+}
+#scoreBox{
+    position: absolute;
+    top : 9px;
+    right : 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Itim', cursive;
+}
+#hiscoreBox{
+    position: absolute;
+    top : 9px;
+    left : 100px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'Itim', cursive;
+
+}

@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    /* vh is window height */
+    height: 100vh; 
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    /* The code below centers the child inside parent, here our board is centered in body */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.board{
+    /* 85 vh meaning jitna bhi browser ka view mil raha hain uska 85percent. */
+    height: 85vh;
+    width: 80vw;
+    background-color: rgb(51, 4, 51);
+    /* curve karne ke liye we give border radius */
+    border-radius: 10px;
+}
+.ball{
+    /* As we do not have circles in css, we curve the radius of our element to 50% to make a circle */
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #fa709a;
+    position: fixed;
+    /* 45vh means top se 45vh neeche aa gayi */
+    top: 45vh;
+    left: 50vw;
+}
+.paddle{
+    height: 120px;
+    width: 15px;
+    background-color: #70fa82;
+    position: fixed;
+    border-radius: 2px;
+    position: fixed;
+}
+.left{
+    top: 40vh;
+    left: 12vw;
+}
+.right{
+    top: 40vh;
+    right: 12vw;
+}
+.fa-circle{
+    color: #fee140;
+    font-size: 32px;
+    border-radius: 50px;
+}
+.scoreboard{
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex: 1 1 1;
+}
+.separator{
+    width: 4px;
+    height: 70%;
+    background-color: black;
+}

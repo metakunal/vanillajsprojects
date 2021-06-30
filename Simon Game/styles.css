@@ -1,0 +1,54 @@
+body {
+  text-align: center;
+  background-color: #01937C;
+}
+
+#level-title {
+  letter-spacing: 10px;
+  font-family: 'Staatliches', cursive;
+  font-size: 3rem;
+  margin:  5%;
+  color: #FEF2BF;
+}
+
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+
+}
+
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+  border: 10px solid #0A1D37;
+  border-radius: 20%;
+}
+
+.game-over {
+  background-color: #FFC074;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: #F54748;
+}
+
+.green {
+  background-color: #98d45c;
+}
+
+.blue {
+  background-color: #125D98;
+}
+
+.yellow {
+  background-color: #FFC107;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
